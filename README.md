@@ -1,4 +1,4 @@
-<img height="225" alt="baserplogo" src="https://avatars.githubusercontent.com/u/48100619?s=400&u=3c1c3417fc3a8bf9ed3eceb9c3092d49914650e7&v=4" align="right">
+<img height="225" alt="baserplogo" src="https://media.licdn.com/dms/image/C560BAQGsqKT-AjomXA/company-logo_200_200/0/1519874130106?e=2147483647&v=beta&t=TsdQC9aBpDJYimAiFmijhswOn-pmWf1_ucFrdZfey-E" align="right">
 <div align="center">
   <h1>Prueba Técnica - Kimia</h1>
   <h3>Creación de una landing page con HTML,CSS,JS</h3>
