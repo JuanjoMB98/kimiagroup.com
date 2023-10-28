@@ -10,13 +10,17 @@
 > [!NOTE]
 > En primer lugar muchas gracias por tu tiempo y la opotunidad! :smile:
 
+# Despliegue
+He subido la web utilizando pages de git y este es el enlace para ver la web (así la podía ver en un móvil real)
+
+
 # Tareas
 - [x] Maquetar base Web
-- [ ] Formulario con varios pasos
-- [ ] Carrusel de opiniones de usuarios
+- [x] Formulario con varios pasos
+- [x] Carrusel de opiniones de usuarios
 - [x] CTAs al formulario
 - [x] Revisar responsive
-- [ ] Extras (Minify, Animación form cuando está en pantalla)
+- [x] Extras (Minify, Animación form cuando está en pantalla)
 
 # Desarrollo
 ### Maquetar base Web & Comprobar el responsive
@@ -30,5 +34,24 @@ La razón por la que he elegido esta forma es porque le he dado prioridad a que 
 
 
 ### Formulario con varios pasos
+>He tardado <1,5 horas> en maquetar todo el contenido
+
+> He tardado <2 horas> en programar la funcionalidad.
+
+**_Observaciones_**
+
+He intentado hacerlo lo más animado y profesional posible y eso me ha llevado más tiempo del que debería
+
+
 ### Carrusel de opiniones de usuarios
+>He tardado <2 horas> en que fuese 100% funcional
+
+**_Observaciones_**
+
+Podría haber utilizado librerías como SwiperJS, pero finalmente he decidido hacerlo por mi propia cuenta. He probado a usar SwiperJS pero me rompía mucho la maquetación y he preferido no invertir más tiempo. Aun así he estado jugando y probando un poco con esto y parece muy interesante
+
 ### CTAs al formulario
+>He tardado <15 mins> en animar el formulario y darle el toque distintivo
+
+> [!ALERT]
+> Muchas gracias por todo!

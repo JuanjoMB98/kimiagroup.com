@@ -13,32 +13,35 @@
             rel="stylesheet"
         />
 
-        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script src="/js/main.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
         <title>JuanjoMengual Kimia</title>
     </head>
     <body>
         <header class="o-mainHeader">
-            <a class="m-headerLogo__container">
-                <div class="m-headerLogoContainer__img">
-                    <img src="/src/solaria-logo.svg" alt="logo-solaria" />
-                </div>
-            </a>
+            <div class="wrap">
+                <a class="m-headerLogo__container">
+                    <div class="m-headerLogoContainer__img">
+                        <img src="/src/solaria-logo.svg" alt="logo-solaria" />
+                    </div>
+                </a>
 
-            <nav class="m-headerNav js-headerNav" data-visible="false">
-                <ul class="m-headerItem_container">
-                    <li class="m-headerItem">
-                        <a class="m-headerItem__link" href="#inicio">
-                            <span class="a-headerItemLink__ico">
-                                <img src="/src/icons/candado.svg" />
-                            </span>
-                            <span class="a-headerItemLink__text">
-                                Formulario seguro
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+                <nav class="m-headerNav js-headerNav" data-visible="false">
+                    <ul class="m-headerItem_container">
+                        <li class="m-headerItem">
+                            <a class="m-headerItem__link" href="#inicio">
+                                <span class="a-headerItemLink__ico">
+                                    <img src="/src/icons/candado.svg" />
+                                </span>
+                                <span class="a-headerItemLink__text">
+                                    Formulario seguro
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <main>
@@ -47,19 +50,194 @@
                     <img src="/src/images/bg_image.jpeg" alt="" />
                 </div>
 
-                <div class="m-heroSection__form">
-                    <h1 class="a-heroTitle">
-                        Encuentra al mejor instalador de paneles solares en tu
-                        zona
-                    </h1>
+                <div class="m-heroSection__form js-form">
+                    <div class="m-heroForm__header">
+                        <h1 class="a-heroForm__title">
+                            Encuentra al mejor instalador de paneles solares en
+                            tu zona
+                        </h1>
+                        <span class="a-heroForm__subtitle">
+                            Calcula tu ahorro en menos de 1 minuto
+                        </span>
+                    </div>
 
-                    <a href="#confirmarAsistencia" class="a-button -primary">
-                        Confirmar asistencia
-                    </a>
+                    <div
+                        class="m-heroForm__separator js-collapsableButton -active"
+                    >
+                        <img
+                            class="a-heroFormSeparator__dropdown"
+                            src="/src/icons/desplegate.svg"
+                            alt=""
+                        />
+                    </div>
+
+                    <form class="m-heroForm__content js-collapsableContent">
+                        <div class="m-heroFormContent__step js-formStep">
+                            <h4 class="a-heroFormContent__title">
+                                ¿Dónde quieres instalar tus placas solares?
+                            </h4>
+
+                            <div class="m-heroFormContent__radioContainer">
+                                <div class="a-heroForm__radioItem js-inputItem">
+                                    <input
+                                        required
+                                        type="radio"
+                                        id="casa"
+                                        name="instalarSolares"
+                                        value="Casa"
+                                    />
+                                    <label
+                                        class="m-radioItem__label"
+                                        for="casa"
+                                    >
+                                        <img
+                                            class="a-radioItemLabel__img"
+                                            src="/src/images/casa.svg"
+                                        />
+                                        <span class="a-radioItemLabel__text">
+                                            Casa
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="a-heroForm__radioItem js-inputItem">
+                                    <input
+                                        required
+                                        type="radio"
+                                        id="piso"
+                                        name="instalarSolares"
+                                        value="Bloque de piso"
+                                    />
+                                    <label
+                                        class="m-radioItem__label"
+                                        for="piso"
+                                    >
+                                        <img
+                                            class="a-radioItemLabel__img"
+                                            src="/src/images/piso.svg"
+                                        />
+                                        <span class="a-radioItemLabel__text">
+                                            Bloque de piso
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="m-heroFormContent__step js-formStep">
+                            <h4 class="a-heroFormContent__title">
+                                Indícanos cómo podemos contactarte para analizar
+                                juntos las opciones solares acordes a tus
+                                necesidades.
+                            </h4>
+
+                            <div class="m-heroFormContent__inputContainer">
+                                <div class="a-heroForm__inputItem js-inputItem">
+                                    <input
+                                        required
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        placeholder="Nombre"
+                                    />
+                                </div>
+                                <div class="a-heroForm__inputItem js-inputItem">
+                                    <input
+                                        required
+                                        type="text"
+                                        id="surname"
+                                        name="surname"
+                                        placeholder="Apellido"
+                                    />
+                                </div>
+                                <div class="a-heroForm__inputItem js-inputItem">
+                                    <input
+                                        required
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="Correo electrónico"
+                                    />
+                                </div>
+                                <div
+                                    class="a-heroForm__inputItem -phoneInput js-inputItem"
+                                >
+                                    <input
+                                        required
+                                        type="number"
+                                        id="phone"
+                                        name="phone"
+                                        placeholder="Número de teléfono"
+                                    />
+                                </div>
+                                <div
+                                    class="a-heroForm__inputItem -checkboxInput js-inputItem"
+                                >
+                                    <input
+                                        type="checkbox"
+                                        id="privacidad"
+                                        name="privacidad"
+                                    />
+                                    <p class="a-checkbox__text">
+                                        He leído y acepto el tratamiento de mis
+                                        datos por parte de JUSTNET MEDIA
+                                        SERVICES, S.L y sus partners comerciales
+                                        conforme viene descrito en la
+                                        <a>Política de privacidad</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="m-progressContainer">
+                            <div class="m-progressBar">
+                                <div
+                                    class="a-progressStatus js-progressBar"
+                                ></div>
+                            </div>
+                            <div class="m-progressStep">
+                                <span
+                                    class="a-progressStep__text js-progressStepActual"
+                                >
+                                    1
+                                </span>
+                                <span class="a-progressStep__text">de</span>
+                                <span
+                                    class="a-progressStep__text js-progressStepTotal"
+                                >
+                                    2
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="m-heroForm__actions">
+                            <div
+                                class="m-form__buttonContainer -prev js-prevButton"
+                            >
+                                <span class="a-formButton__text">Anterior</span>
+                                <img
+                                    class="a-formButton__ico"
+                                    src="/src/icons/arrow.svg"
+                                    alt="arrow"
+                                />
+                            </div>
+                            <div
+                                class="m-form__buttonContainer -next js-nextButton"
+                            >
+                                <span class="a-formButton__text">
+                                    Siguiente
+                                </span>
+                                <img
+                                    class="a-formButton__ico"
+                                    src="/src/icons/arrow.svg"
+                                    alt="arrow"
+                                />
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
 
-            <div class="o-brandSection">
+            <section class="o-brandSection">
                 <img
                     class="m-brandItem"
                     src="/src/brands/holaluz.svg"
@@ -90,11 +268,15 @@
                     src="/src/brands/total-energies.svg"
                     alt="total-energies-logo"
                 />
-            </div>
+            </section>
 
-            <div class="o-moduleHomeSection">
+            <section class="o-moduleHomeSection">
                 <div class="m-moduleHome__figure">
-                    <img class="a-moduleHome__img" src="/src/images/modulo1.jpg" alt="" />
+                    <img
+                        class="a-moduleHome__img"
+                        src="/src/images/modulo1.jpg"
+                        alt=""
+                    />
                 </div>
                 <div class="m-moduleHome__content">
                     <h2 class="a-mainPage__title -h2">BENEFICIOS DE SOLARIA</h2>
@@ -137,13 +319,21 @@
                         ¿Tienes dudas? Te llamamos gratis
                     </a>
                 </div>
-            </div>
+            </section>
 
-            <div class="o-testimonialsSection">
+            <section class="o-testimonialsSection">
                 <div class="wrap">
                     <h2 class="a-mainPage__title -h2">
                         Las opiniones de nuestros clientes
                     </h2>
+
+                    <div class="m-testimonialWrap">
+
+                    <i class="a-carruselController" id="left">
+                        <svg width="16" height="16" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.4014 25.1431L8.85851 14.6002C8.77651 14.5233 8.71116 14.4303 8.66649 14.3271C8.62181 14.2239 8.59876 14.1127 8.59876 14.0002C8.59876 13.8878 8.62181 13.7765 8.66649 13.6733C8.71116 13.5701 8.77651 13.4772 8.85851 13.4002L19.4014 2.85735" stroke="#59e4a9" stroke-width="3.42857" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </i>
 
                     <div class="m-testimonials__content">
                         <div class="m-testimonial__item">
@@ -162,8 +352,10 @@
                             </div>
 
                             <p class="a-testimonialItem__text">
-                                ¡Vaya hallazgo!
-                                Gracias a esta web, me llamaron y no me cobraron nada. Enseguida me pusieron en contacto con instaladores y ya tengo placas en casa funcionando.
+                                ¡Vaya hallazgo! Gracias a esta web, me llamaron
+                                y no me cobraron nada. Enseguida me pusieron en
+                                contacto con instaladores y ya tengo placas en
+                                casa funcionando.
                             </p>
 
                             <span class="a-testimonialItem__name">
@@ -187,7 +379,11 @@
                             </div>
 
                             <p class="a-testimonialItem__text">
-                                Increíblemente útil. No tenía idea de por dónde empezar en mi búsqueda de paneles solares, pero esta plataforma me lo facilitó todo. Mis nuevas placas funcionan de maravilla y ya estoy ahorrando dinero.
+                                Increíblemente útil. No tenía idea de por dónde
+                                empezar en mi búsqueda de paneles solares, pero
+                                esta plataforma me lo facilitó todo. Mis nuevas
+                                placas funcionan de maravilla y ya estoy
+                                ahorrando dinero.
                             </p>
 
                             <span class="a-testimonialItem__name">
@@ -211,7 +407,11 @@
                             </div>
 
                             <p class="a-testimonialItem__text">
-                                Nunca había dejado una reseña antes, pero estoy tan impresionada con la rapidez y calidad del servicio que sentía que debía hacerlo. Me pusieron en contacto con mi instalador super rápido y él también vino enseguida.
+                                Nunca había dejado una reseña antes, pero estoy
+                                tan impresionada con la rapidez y calidad del
+                                servicio que sentía que debía hacerlo. Me
+                                pusieron en contacto con mi instalador super
+                                rápido y él también vino enseguida.
                             </p>
 
                             <span class="a-testimonialItem__name">
@@ -235,7 +435,11 @@
                             </div>
 
                             <p class="a-testimonialItem__text">
-                                Me ahorré tiempo y dinero. Me pusieron en contacto inmediatamente con profesionales competentes y pude elegir la mejor opción para mi casa. Además me ayudaron con las subvenciones.
+                                Me ahorré tiempo y dinero. Me pusieron en
+                                contacto inmediatamente con profesionales
+                                competentes y pude elegir la mejor opción para
+                                mi casa. Además me ayudaron con las
+                                subvenciones.
                             </p>
 
                             <span class="a-testimonialItem__name">
@@ -244,50 +448,87 @@
                         </div>
                     </div>
 
+                    <i class="a-carruselController" id="right">
+                        <svg width="16" height="16" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.59869 2.85693L19.1416 13.3998C19.2235 13.4767 19.2889 13.5697 19.3336 13.6729C19.3782 13.7761 19.4013 13.8873 19.4013 13.9998C19.4013 14.1122 19.3782 14.2235 19.3336 14.3267C19.2889 14.4299 19.2235 14.5228 19.1415 14.5998L8.59869 25.1426" stroke="#59e4a9" stroke-width="3.42857" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </i>
+
+                    </div>
+
+
                     <a class="a-button -primary" href="#inicio">
                         ¿Tiénes dudas? Te llamamos gratis
                     </a>
                 </div>
-            </div>
+            </section>
 
-            <div class="o-aboutUsSection">
+            <section class="o-aboutUsSection">
                 <div class="wrap">
                     <div class="m-aboutUs__diagram">
-                        <h2 class="a-mainPage__title -h2">¿Cómo funcionamos?</h2>
+                        <h2 class="a-mainPage__title -h2">
+                            ¿Cómo funcionamos?
+                        </h2>
                         <div class="m-aboutUs__container">
                             <div class="a-aboutUs__item">
                                 <div class="m-mainPageIco__figure">
-                                    <img class="m-mainPage__ico" src="/src/icons/pluma.svg"></img>
+                                    <img
+                                        class="m-mainPage__ico"
+                                        src="/src/icons/pluma.svg"
+                                    />
                                 </div>
-                                <h3 class="a-mainPage__title -h3">Nos das tus datos</h3>
+                                <h3 class="a-mainPage__title -h3">
+                                    Nos das tus datos
+                                </h3>
                             </div>
 
                             <div class="a-aboutUs__item">
                                 <div class="m-mainPageIco__figure">
-                                    <img class="m-mainPage__ico" src="/src/icons/phone.svg"></img>
+                                    <img
+                                        class="m-mainPage__ico"
+                                        src="/src/icons/phone.svg"
+                                    />
                                 </div>
-                                <h3 class="a-mainPage__title -h3">Nos ponemos en contacto contigo</h3>
+                                <h3 class="a-mainPage__title -h3">
+                                    Nos ponemos en contacto contigo
+                                </h3>
                             </div>
 
                             <div class="a-aboutUs__item">
                                 <div class="m-mainPageIco__figure">
-                                    <img class="m-mainPage__ico" src="/src/icons/manos.svg"></img>
+                                    <img
+                                        class="m-mainPage__ico"
+                                        src="/src/icons/manos.svg"
+                                    />
                                 </div>
-                                <h3 class="a-mainPage__title -h3">Determinamos juntos la mejor opción solar para ti</h3>
+                                <h3 class="a-mainPage__title -h3">
+                                    Determinamos juntos la mejor opción solar
+                                    para ti
+                                </h3>
                             </div>
 
                             <div class="a-aboutUs__item">
                                 <div class="m-mainPageIco__figure">
-                                    <img class="m-mainPage__ico" src="/src/icons/pagina.svg"></img>
+                                    <img
+                                        class="m-mainPage__ico"
+                                        src="/src/icons/pagina.svg"
+                                    />
                                 </div>
-                                <h3 class="a-mainPage__title -h3">Gestionamos el papeleo de tus subvencioneS</h3>
+                                <h3 class="a-mainPage__title -h3">
+                                    Gestionamos el papeleo de tus subvencioneS
+                                </h3>
                             </div>
 
                             <div class="a-aboutUs__item">
                                 <div class="m-mainPageIco__figure">
-                                    <img class="m-mainPage__ico" src="/src/icons/pc.svg"></img>
+                                    <img
+                                        class="m-mainPage__ico"
+                                        src="/src/icons/pc.svg"
+                                    />
                                 </div>
-                                <h3 class="a-mainPage__title -h3">¡Instalamos!</h3>
+                                <h3 class="a-mainPage__title -h3">
+                                    ¡Instalamos!
+                                </h3>
                             </div>
                         </div>
                         <a class="a-button -primary" href="#inicio">
@@ -297,33 +538,65 @@
                     <div class="m-aboutUs__content">
                         <div class="m-aboutUsContent__info">
                             <div class="m-aboutUsContentInfo__group">
-                                <h2 class="a-mainPage__title -h2">Trabajamos con instaladores en todo el país</h2>
-                                <p class="a-mainPage__text">Tenemos cobertura en toda España (incluidas Islas Baleares y Canarias), contando con equipos de expertos y los instaladores más cualificados para asegurar la excelencia en todas las instalaciones. Selecciona tu provincia para continuar con el proceso.</p>
+                                <h2 class="a-mainPage__title -h2">
+                                    Trabajamos con instaladores en todo el país
+                                </h2>
+                                <p class="a-mainPage__text">
+                                    Tenemos cobertura en toda España (incluidas
+                                    Islas Baleares y Canarias), contando con
+                                    equipos de expertos y los instaladores más
+                                    cualificados para asegurar la excelencia en
+                                    todas las instalaciones. Selecciona tu
+                                    provincia para continuar con el proceso.
+                                </p>
                             </div>
-                                <a class="a-button -primary" href="#inicio">
+                            <a class="a-button -primary" href="#inicio">
                                 Empieza ahora
                             </a>
                         </div>
                         <div class="m-aboutUsContent__img">
-                            <img src="/src/images/Spain.png" alt="Spain">
+                            <img src="/src/images/Spain.png" alt="Spain" />
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="o-relatedPagesSection">
+            <section class="o-relatedPagesSection">
                 <div class="m-relatedPage__item">
                     <div class="m-pageItem__figure">
-                        <img  class="a-pageItem__img" src="/src/images/noticia1.jpg" alt="noticia1">
+                        <img
+                            class="a-pageItem__img"
+                            src="/src/images/noticia1.jpg"
+                            alt="noticia1"
+                        />
                     </div>
                     <div class="m-pageItem__content">
-                        <h3 class="a-mainPage__title -h3">¿Las placas solares permiten aumentar el valor de mi vivienda?</h3>
-                        <p class="a-mainPage__text">Sí. Los compradores cada vez valoran más la eficiencia energética y la capacidad de generar su propia energía, lo que hace a una casa con placas solares más atractiva en el mercado. Además, los sistemas solares suelen venir con garantías de rendimiento a largo plazo, lo que puede ser un atractivo adicional para los compradores.</p>
+                        <h3 class="a-mainPage__title -h3">
+                            ¿Las placas solares permiten aumentar el valor de mi
+                            vivienda?
+                        </h3>
+                        <p class="a-mainPage__text">
+                            Sí. Los compradores cada vez valoran más la
+                            eficiencia energética y la capacidad de generar su
+                            propia energía, lo que hace a una casa con placas
+                            solares más atractiva en el mercado. Además, los
+                            sistemas solares suelen venir con garantías de
+                            rendimiento a largo plazo, lo que puede ser un
+                            atractivo adicional para los compradores.
+                        </p>
                         <a class="m-pageItem__cta">
-                            <span class="a-cta__label">¿Quieres más información?</span>
+                            <span class="a-cta__label">
+                                ¿Quieres más información?
+                            </span>
                             <div class="m-cta__buttonContainer">
-                                <span class="a-cta__highlight">Consúltanos</span>
-                                <img class="a-cta__ico" src="/src/icons/arrow.svg" alt="arrow">
+                                <span class="a-cta__highlight">
+                                    Consúltanos
+                                </span>
+                                <img
+                                    class="a-cta__ico"
+                                    src="/src/icons/arrow.svg"
+                                    alt="arrow"
+                                />
                             </div>
                         </a>
                     </div>
@@ -331,16 +604,39 @@
 
                 <div class="m-relatedPage__item">
                     <div class="m-pageItem__figure">
-                        <img  class="a-pageItem__img" src="/src/images/noticia2.jpg" alt="noticia2">
+                        <img
+                            class="a-pageItem__img"
+                            src="/src/images/noticia2.jpg"
+                            alt="noticia2"
+                        />
                     </div>
                     <div class="m-pageItem__content">
-                        <h3 class="a-mainPage__title -h3">¿Las placas solares permiten aumentar el valor de mi vivienda?</h3>
-                        <p class="a-mainPage__text">Sí. Los compradores cada vez valoran más la eficiencia energética y la capacidad de generar su propia energía, lo que hace a una casa con placas solares más atractiva en el mercado. Además, los sistemas solares suelen venir con garantías de rendimiento a largo plazo, lo que puede ser un atractivo adicional para los compradores.</p>
+                        <h3 class="a-mainPage__title -h3">
+                            ¿Las placas solares permiten aumentar el valor de mi
+                            vivienda?
+                        </h3>
+                        <p class="a-mainPage__text">
+                            Sí. Los compradores cada vez valoran más la
+                            eficiencia energética y la capacidad de generar su
+                            propia energía, lo que hace a una casa con placas
+                            solares más atractiva en el mercado. Además, los
+                            sistemas solares suelen venir con garantías de
+                            rendimiento a largo plazo, lo que puede ser un
+                            atractivo adicional para los compradores.
+                        </p>
                         <a class="m-pageItem__cta">
-                            <span class="a-cta__label">¿Quieres más información?</span>
+                            <span class="a-cta__label">
+                                ¿Quieres más información?
+                            </span>
                             <div class="m-cta__buttonContainer">
-                                <span class="a-cta__highlight">Consúltanos</span>
-                                <img class="a-cta__ico" src="/src/icons/arrow.svg" alt="arrow">
+                                <span class="a-cta__highlight">
+                                    Consúltanos
+                                </span>
+                                <img
+                                    class="a-cta__ico"
+                                    src="/src/icons/arrow.svg"
+                                    alt="arrow"
+                                />
                             </div>
                         </a>
                     </div>
@@ -348,16 +644,39 @@
 
                 <div class="m-relatedPage__item">
                     <div class="m-pageItem__figure">
-                        <img  class="a-pageItem__img" src="/src/images/noticia3.jpg" alt="noticia3">
+                        <img
+                            class="a-pageItem__img"
+                            src="/src/images/noticia3.jpg"
+                            alt="noticia3"
+                        />
                     </div>
                     <div class="m-pageItem__content">
-                        <h3 class="a-mainPage__title -h3">¿Las placas solares permiten aumentar el valor de mi vivienda?</h3>
-                        <p class="a-mainPage__text">Sí. Los compradores cada vez valoran más la eficiencia energética y la capacidad de generar su propia energía, lo que hace a una casa con placas solares más atractiva en el mercado. Además, los sistemas solares suelen venir con garantías de rendimiento a largo plazo, lo que puede ser un atractivo adicional para los compradores.</p>
+                        <h3 class="a-mainPage__title -h3">
+                            ¿Las placas solares permiten aumentar el valor de mi
+                            vivienda?
+                        </h3>
+                        <p class="a-mainPage__text">
+                            Sí. Los compradores cada vez valoran más la
+                            eficiencia energética y la capacidad de generar su
+                            propia energía, lo que hace a una casa con placas
+                            solares más atractiva en el mercado. Además, los
+                            sistemas solares suelen venir con garantías de
+                            rendimiento a largo plazo, lo que puede ser un
+                            atractivo adicional para los compradores.
+                        </p>
                         <a class="m-pageItem__cta">
-                            <span class="a-cta__label">¿Quieres más información?</span>
+                            <span class="a-cta__label">
+                                ¿Quieres más información?
+                            </span>
                             <div class="m-cta__buttonContainer">
-                                <span class="a-cta__highlight">Consúltanos</span>
-                                <img class="a-cta__ico" src="/src/icons/arrow.svg" alt="arrow">
+                                <span class="a-cta__highlight">
+                                    Consúltanos
+                                </span>
+                                <img
+                                    class="a-cta__ico"
+                                    src="/src/icons/arrow.svg"
+                                    alt="arrow"
+                                />
                             </div>
                         </a>
                     </div>
@@ -365,58 +684,96 @@
 
                 <div class="m-relatedPage__item">
                     <div class="m-pageItem__figure">
-                        <img  class="a-pageItem__img" src="/src/images/noticia4.jpg" alt="noticia4">
+                        <img
+                            class="a-pageItem__img"
+                            src="/src/images/noticia4.jpg"
+                            alt="noticia4"
+                        />
                     </div>
                     <div class="m-pageItem__content">
-                        <h3 class="a-mainPage__title -h3">¿Las placas solares permiten aumentar el valor de mi vivienda?</h3>
-                        <p class="a-mainPage__text">Sí. Los compradores cada vez valoran más la eficiencia energética y la capacidad de generar su propia energía, lo que hace a una casa con placas solares más atractiva en el mercado. Además, los sistemas solares suelen venir con garantías de rendimiento a largo plazo, lo que puede ser un atractivo adicional para los compradores.</p>
+                        <h3 class="a-mainPage__title -h3">
+                            ¿Las placas solares permiten aumentar el valor de mi
+                            vivienda?
+                        </h3>
+                        <p class="a-mainPage__text">
+                            Sí. Los compradores cada vez valoran más la
+                            eficiencia energética y la capacidad de generar su
+                            propia energía, lo que hace a una casa con placas
+                            solares más atractiva en el mercado. Además, los
+                            sistemas solares suelen venir con garantías de
+                            rendimiento a largo plazo, lo que puede ser un
+                            atractivo adicional para los compradores.
+                        </p>
                         <a class="m-pageItem__cta">
-                            <span class="a-cta__label">¿Quieres más información?</span>
+                            <span class="a-cta__label">
+                                ¿Quieres más información?
+                            </span>
                             <div class="m-cta__buttonContainer">
-                                <span class="a-cta__highlight">Consúltanos</span>
-                                <img class="a-cta__ico" src="/src/icons/arrow.svg" alt="arrow">
+                                <span class="a-cta__highlight">
+                                    Consúltanos
+                                </span>
+                                <img
+                                    class="a-cta__ico"
+                                    src="/src/icons/arrow.svg"
+                                    alt="arrow"
+                                />
                             </div>
                         </a>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="o-studySection">
+            <section class="o-studySection">
                 <div class="m-mainPageIco__figure">
-                    <img class="m-mainPage__ico" src="/src/icons/pencil-ruler.svg"></img>
+                    <img
+                        class="m-mainPage__ico"
+                        src="/src/icons/pencil-ruler.svg"
+                    />
                 </div>
                 <div class="m-study__content">
                     <h3 class="a-mainPage__title -h3">Tu estudio gratuito</h3>
-                    <p class="a-mainPage__text" >Ahora te asesoramos y hacemos un análisis de tus necesidades gratis y sin compromiso</p>
+                    <p class="a-mainPage__text">
+                        Ahora te asesoramos y hacemos un análisis de tus
+                        necesidades gratis y sin compromiso
+                    </p>
                 </div>
                 <a class="a-button -primary" href="#inicio">
                     Quiero mi estudio gratuito
                 </a>
-            </div>
-
+            </section>
         </main>
 
         <footer class="o-mainFooter">
             <div class="wrap">
                 <div class="m-footer__cta">
-                    <img class="a-footerCta__img" src="/src/images/contacto.jpg" alt="contacto">
+                    <img
+                        class="a-footerCta__img"
+                        src="/src/images/contacto.jpg"
+                        alt="contacto"
+                    />
                     <div class="m-footerCta__content">
-                        <span class="a-mainPage__title">¿Te quedan preguntas?</span>
-                        <a class="a-button -primary"> Te llamamos gratis</a>
+                        <span class="a-mainPage__title">
+                            ¿Te quedan preguntas?
+                        </span>
+                        <a class="a-button -primary">Te llamamos gratis</a>
                     </div>
                 </div>
                 <div class="m-footer__info">
                     <div class="m-footerInfo__figure">
-                        <img src="/src/solaria-logo.svg" alt="solaria-logo">
+                        <img src="/src/solaria-logo.svg" alt="solaria-logo" />
                     </div>
                     <div class="m-footerInfo__links">
                         <a class="a-footerLink">Política de privacidad</a>
                         <a class="a-footerLink">Política de cookies</a>
                         <a class="a-footerLink">Contacto</a>
                     </div>
-                    <span class="m-footerInfo__copyright">© 2023. Servicio publicitario.</span>
+                    <span class="m-footerInfo__copyright">
+                        © 2023. Servicio publicitario.
+                    </span>
                 </div>
             </div>
         </footer>
     </body>
+
+    <script src="js/main.js"></script>
 </html>
