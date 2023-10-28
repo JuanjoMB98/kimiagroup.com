@@ -53,5 +53,5 @@ Podría haber utilizado librerías como SwiperJS, pero finalmente he decidido ha
 ### CTAs al formulario
 >He tardado <15 mins> en animar el formulario y darle el toque distintivo
 
-> [!ALERT]
+> [!Important]
 > Muchas gracias por todo!
