@@ -78,6 +78,8 @@ a {
 
 .-h2{
     font-size: 38rem;
+    line-height: 40rem;
+    margin-bottom: 8rem;
 }
 .-h3{
     font-size: 20rem;
@@ -637,6 +639,8 @@ a {
     }
     .m-moduleHome__content{
         padding: 16rem;
+        align-items: flex-start;
+        gap: 8rem;
     }
     .m-moduleHome__content .a-button{
         text-align: center;
