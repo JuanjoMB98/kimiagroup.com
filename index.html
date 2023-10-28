@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <!-- Fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;800&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="/js/main.js"></script>
+        <title>JuanjoMengual Kimia</title>
+    </head>
+    <body>
+        <header class="o-mainHeader">
+            <a class="m-headerLogo__container">
+                <div class="m-headerLogoContainer__img">
+                    <img src="/src/solaria-logo.svg" alt="logo-solaria" />
+                </div>
+            </a>
+
+            <nav class="m-headerNav js-headerNav" data-visible="false">
+                <ul class="m-headerItem_container">
+                    <li class="m-headerItem">
+                        <a class="m-headerItem__link" href="#inicio">
+                            <span class="a-headerItemLink__ico">
+                                <img src="/src/icons/candado.svg" />
+                            </span>
+                            <span class="a-headerItemLink__text">
+                                Formulario seguro
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="o-heroSection" id="inicio">
+                <div class="m-heroSection__image">
+                    <img src="/src/images/bg_image.jpeg" alt="" />
+                </div>
+
+                <div class="m-heroSection__form">
+                    <h1 class="a-heroTitle">
+                        Encuentra al mejor instalador de paneles solares en tu
+                        zona
+                    </h1>
+
+                    <a href="#confirmarAsistencia" class="a-button -primary">
+                        Confirmar asistencia
+                    </a>
+                </div>
+            </div>
+
+            <div class="o-brandSection">
+                <img
+                    class="m-brandItem"
+                    src="/src/brands/holaluz.svg"
+                    alt="holaluz-logo"
+                />
+                <img
+                    class="m-brandItem"
+                    src="/src/brands/naturgy-w.svg"
+                    alt="naturgy-w-logo"
+                />
+                <img
+                    class="m-brandItem"
+                    src="/src/brands/endesa.svg"
+                    alt="endesa-logo"
+                />
+                <img
+                    class="m-brandItem"
+                    src="/src/brands/repsol-w.svg"
+                    alt="repsol-w.svg-logo"
+                />
+                <img
+                    class="m-brandItem"
+                    src="/src/brands/iberdrola.svg"
+                    alt="iberdrola-logo"
+                />
+                <img
+                    class="m-brandItem"
+                    src="/src/brands/total-energies.svg"
+                    alt="total-energies-logo"
+                />
+            </div>
+
+            <div class="o-moduleHomeSection">
+                <div class="m-moduleHome__figure">
+                    <img class="a-moduleHome__img" src="/src/images/modulo1.jpg" alt="" />
+                </div>
+                <div class="m-moduleHome__content">
+                    <h2 class="a-mainPage__title -h2">BENEFICIOS DE SOLARIA</h2>
+
+                    <div class="m-moduleHomeContent__item">
+                        <h3 class="a-mainPage__title -h3">
+                            Comparamos objetivamente
+                        </h3>
+                        <p>
+                            No estamos afiliados a ninguna marca ni instalador
+                            en particular. Entendemos que cada casa es única y
+                            tiene necesidades distintas, por eso nuestra misión
+                            es ayudarte a encontrar la mejor oferta en energía
+                            solar adaptada a ti.
+                        </p>
+                    </div>
+                    <div class="m-moduleHomeContent__item">
+                        <h3 class="a-mainPage__title -h3">
+                            Ahorra tiempo y dinero
+                        </h3>
+                        <p>
+                            Nuestra plataforma compara múltiples instaladores en
+                            segundos, evitando la necesidad de buscar y
+                            contactar a cada uno por separado. Esto no solo te
+                            ahorra tiempo, también dinero encontrando la oferta
+                            más competitiva.
+                        </p>
+                    </div>
+                    <div class="m-moduleHomeContent__item">
+                        <h3 class="a-mainPage__title -h3">Comprador líder</h3>
+                        <p>
+                            Encontrar la solución de energía solar perfecta para
+                            tu hogar nunca ha sido tan fácil. En SOLARIA, somos
+                            líderes en la comparación de instaladores de placas
+                            solares para particulares.
+                        </p>
+                    </div>
+
+                    <a class="a-button -primary" href="#inicio">
+                        ¿Tienes dudas? Te llamamos gratis
+                    </a>
+                </div>
+            </div>
+
+            <div class="o-testimonialsSection">
+                <div class="wrap">
+                    <h2 class="a-mainPage__title -h2">
+                        Las opiniones de nuestros clientes
+                    </h2>
+
+                    <div class="m-testimonials__content">
+                        <div class="m-testimonial__item">
+                            <div class="m-testimonialItem__group">
+                                <img
+                                    class="m-testimonialItem__avatar"
+                                    src="/src/images/avatar1.jpg"
+                                    alt="avatar1"
+                                />
+                                <div class="m-testimonialItem__stars">
+                                    <img
+                                        src="/src/icons/stars-5.svg"
+                                        alt="stars-5"
+                                    />
+                                </div>
+                            </div>
+
+                            <p class="a-testimonialItem__text">
+                                ¡Vaya hallazgo!
+                                Gracias a esta web, me llamaron y no me cobraron nada. Enseguida me pusieron en contacto con instaladores y ya tengo placas en casa funcionando.
+                            </p>
+
+                            <span class="a-testimonialItem__name">
+                                Diego Torres
+                            </span>
+                        </div>
+
+                        <div class="m-testimonial__item">
+                            <div class="m-testimonialItem__group">
+                                <img
+                                    class="m-testimonialItem__avatar"
+                                    src="/src/images/avatar2.jpg"
+                                    alt="avatar2"
+                                />
+                                <div class="m-testimonialItem__stars">
+                                    <img
+                                        src="/src/icons/stars-4half.svg"
+                                        alt="stars-4half"
+                                    />
+                                </div>
+                            </div>
+
+                            <p class="a-testimonialItem__text">
+                                Increíblemente útil. No tenía idea de por dónde empezar en mi búsqueda de paneles solares, pero esta plataforma me lo facilitó todo. Mis nuevas placas funcionan de maravilla y ya estoy ahorrando dinero.
+                            </p>
+
+                            <span class="a-testimonialItem__name">
+                                Manuel Herrera
+                            </span>
+                        </div>
+
+                        <div class="m-testimonial__item">
+                            <div class="m-testimonialItem__group">
+                                <img
+                                    class="m-testimonialItem__avatar"
+                                    src="/src/images/avatar3.jpg"
+                                    alt="avatar3"
+                                />
+                                <div class="m-testimonialItem__stars">
+                                    <img
+                                        src="/src/icons/stars-5.svg"
+                                        alt="stars-5"
+                                    />
+                                </div>
+                            </div>
+
+                            <p class="a-testimonialItem__text">
+                                Nunca había dejado una reseña antes, pero estoy tan impresionada con la rapidez y calidad del servicio que sentía que debía hacerlo. Me pusieron en contacto con mi instalador super rápido y él también vino enseguida.
+                            </p>
+
+                            <span class="a-testimonialItem__name">
+                                Marta díaz
+                            </span>
+                        </div>
+
+                        <div class="m-testimonial__item">
+                            <div class="m-testimonialItem__group">
+                                <img
+                                    class="m-testimonialItem__avatar"
+                                    src="/src/images/avatar4.jpg"
+                                    alt="avatar4"
+                                />
+                                <div class="m-testimonialItem__stars">
+                                    <img
+                                        src="/src/icons/stars-5.svg"
+                                        alt="stars-5"
+                                    />
+                                </div>
+                            </div>
+
+                            <p class="a-testimonialItem__text">
+                                Me ahorré tiempo y dinero. Me pusieron en contacto inmediatamente con profesionales competentes y pude elegir la mejor opción para mi casa. Además me ayudaron con las subvenciones.
+                            </p>
+
+                            <span class="a-testimonialItem__name">
+                                Beatriz r. medina
+                            </span>
+                        </div>
+                    </div>
+
+                    <a class="a-button -primary" href="#inicio">
+                        ¿Tiénes dudas? Te llamamos gratis
+                    </a>
+                </div>
+            </div>
+
+            <div class="o-aboutUsSection">
+                <div class="wrap">
+                    <div class="m-aboutUs__diagram">
+                        <h2 class="a-mainPage__title -h2">¿Cómo funcionamos?</h2>
+                        <div class="m-aboutUs__container">
+                            <div class="a-aboutUs__item">
+                                <div class="m-mainPageIco__figure">
+                                    <img class="m-mainPage__ico" src="/src/icons/pluma.svg"></img>
+                                </div>
+                                <h3 class="a-mainPage__title -h3">Nos das tus datos</h3>
+                            </div>
+
+                            <div class="a-aboutUs__item">
+                                <div class="m-mainPageIco__figure">
+                                    <img class="m-mainPage__ico" src="/src/icons/phone.svg"></img>
+                                </div>
+                                <h3 class="a-mainPage__title -h3">Nos ponemos en contacto contigo</h3>
+                            </div>
+
+                            <div class="a-aboutUs__item">
+                                <div class="m-mainPageIco__figure">
+                                    <img class="m-mainPage__ico" src="/src/icons/manos.svg"></img>
+                                </div>
+                                <h3 class="a-mainPage__title -h3">Determinamos juntos la mejor opción solar para ti</h3>
+                            </div>
+
+                            <div class="a-aboutUs__item">
+                                <div class="m-mainPageIco__figure">
+                                    <img class="m-mainPage__ico" src="/src/icons/pagina.svg"></img>
+                                </div>
+                                <h3 class="a-mainPage__title -h3">Gestionamos el papeleo de tus subvencioneS</h3>
+                            </div>
+
+                            <div class="a-aboutUs__item">
+                                <div class="m-mainPageIco__figure">
+                                    <img class="m-mainPage__ico" src="/src/icons/pc.svg"></img>
+                                </div>
+                                <h3 class="a-mainPage__title -h3">¡Instalamos!</h3>
+                            </div>
+                        </div>
+                        <a class="a-button -primary" href="#inicio">
+                            Descubre cómo
+                        </a>
+                    </div>
+                    <div class="m-aboutUs__content">
+                        <div class="m-aboutUsContent__info">
+                            <div class="m-aboutUsContentInfo__group">
+                                <h2 class="a-mainPage__title -h2">Trabajamos con instaladores en todo el país</h2>
+                                <p class="a-mainPage__text">Tenemos cobertura en toda España (incluidas Islas Baleares y Canarias), contando con equipos de expertos y los instaladores más cualificados para asegurar la excelencia en todas las instalaciones. Selecciona tu provincia para continuar con el proceso.</p>
+                            </div>
+                                <a class="a-button -primary" href="#inicio">
+                                Empieza ahora
+                            </a>
+                        </div>
+                        <div class="m-aboutUsContent__img">
+                            <img src="/src/images/Spain.png" alt="Spain">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="o-relatedPagesSection">
+                <div class="m-relatedPage__item">
+                    <div class="m-pageItem__figure">
+                        <img  class="a-pageItem__img" src="/src/images/noticia1.jpg" alt="noticia1">
+                    </div>
+                    <div class="m-pageItem__content">
+                        <h3 class="a-mainPage__title -h3">¿Las placas solares permiten aumentar el valor de mi vivienda?</h3>
+                        <p class="a-mainPage__text">Sí. Los compradores cada vez valoran más la eficiencia energética y la capacidad de generar su propia energía, lo que hace a una casa con placas solares más atractiva en el mercado. Además, los sistemas solares suelen venir con garantías de rendimiento a largo plazo, lo que puede ser un atractivo adicional para los compradores.</p>
+                        <a class="m-pageItem__cta">
+                            <span class="a-cta__label">¿Quieres más información?</span>
+                            <div class="m-cta__buttonContainer">
+                                <span class="a-cta__highlight">Consúltanos</span>
+                                <img class="a-cta__ico" src="/src/icons/arrow.svg" alt="arrow">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="m-relatedPage__item">
+                    <div class="m-pageItem__figure">
+                        <img  class="a-pageItem__img" src="/src/images/noticia2.jpg" alt="noticia2">
+                    </div>
+                    <div class="m-pageItem__content">
+                        <h3 class="a-mainPage__title -h3">¿Las placas solares permiten aumentar el valor de mi vivienda?</h3>
+                        <p class="a-mainPage__text">Sí. Los compradores cada vez valoran más la eficiencia energética y la capacidad de generar su propia energía, lo que hace a una casa con placas solares más atractiva en el mercado. Además, los sistemas solares suelen venir con garantías de rendimiento a largo plazo, lo que puede ser un atractivo adicional para los compradores.</p>
+                        <a class="m-pageItem__cta">
+                            <span class="a-cta__label">¿Quieres más información?</span>
+                            <div class="m-cta__buttonContainer">
+                                <span class="a-cta__highlight">Consúltanos</span>
+                                <img class="a-cta__ico" src="/src/icons/arrow.svg" alt="arrow">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="m-relatedPage__item">
+                    <div class="m-pageItem__figure">
+                        <img  class="a-pageItem__img" src="/src/images/noticia3.jpg" alt="noticia3">
+                    </div>
+                    <div class="m-pageItem__content">
+                        <h3 class="a-mainPage__title -h3">¿Las placas solares permiten aumentar el valor de mi vivienda?</h3>
+                        <p class="a-mainPage__text">Sí. Los compradores cada vez valoran más la eficiencia energética y la capacidad de generar su propia energía, lo que hace a una casa con placas solares más atractiva en el mercado. Además, los sistemas solares suelen venir con garantías de rendimiento a largo plazo, lo que puede ser un atractivo adicional para los compradores.</p>
+                        <a class="m-pageItem__cta">
+                            <span class="a-cta__label">¿Quieres más información?</span>
+                            <div class="m-cta__buttonContainer">
+                                <span class="a-cta__highlight">Consúltanos</span>
+                                <img class="a-cta__ico" src="/src/icons/arrow.svg" alt="arrow">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="m-relatedPage__item">
+                    <div class="m-pageItem__figure">
+                        <img  class="a-pageItem__img" src="/src/images/noticia4.jpg" alt="noticia4">
+                    </div>
+                    <div class="m-pageItem__content">
+                        <h3 class="a-mainPage__title -h3">¿Las placas solares permiten aumentar el valor de mi vivienda?</h3>
+                        <p class="a-mainPage__text">Sí. Los compradores cada vez valoran más la eficiencia energética y la capacidad de generar su propia energía, lo que hace a una casa con placas solares más atractiva en el mercado. Además, los sistemas solares suelen venir con garantías de rendimiento a largo plazo, lo que puede ser un atractivo adicional para los compradores.</p>
+                        <a class="m-pageItem__cta">
+                            <span class="a-cta__label">¿Quieres más información?</span>
+                            <div class="m-cta__buttonContainer">
+                                <span class="a-cta__highlight">Consúltanos</span>
+                                <img class="a-cta__ico" src="/src/icons/arrow.svg" alt="arrow">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="o-studySection">
+                <div class="m-mainPageIco__figure">
+                    <img class="m-mainPage__ico" src="/src/icons/pencil-ruler.svg"></img>
+                </div>
+                <div class="m-study__content">
+                    <h3 class="a-mainPage__title -h3">Tu estudio gratuito</h3>
+                    <p class="a-mainPage__text" >Ahora te asesoramos y hacemos un análisis de tus necesidades gratis y sin compromiso</p>
+                </div>
+                <a class="a-button -primary" href="#inicio">
+                    Quiero mi estudio gratuito
+                </a>
+            </div>
+
+        </main>
+
+        <footer class="o-mainFooter">
+            <div class="wrap">
+                <div class="m-footer__cta">
+                    <img class="a-footerCta__img" src="/src/images/contacto.jpg" alt="contacto">
+                    <div class="m-footerCta__content">
+                        <span class="a-mainPage__title">¿Te quedan preguntas?</span>
+                        <a class="a-button -primary"> Te llamamos gratis</a>
+                    </div>
+                </div>
+                <div class="m-footer__info">
+                    <div class="m-footerInfo__figure">
+                        <img src="/src/solaria-logo.svg" alt="solaria-logo">
+                    </div>
+                    <div class="m-footerInfo__links">
+                        <a class="a-footerLink">Política de privacidad</a>
+                        <a class="a-footerLink">Política de cookies</a>
+                        <a class="a-footerLink">Contacto</a>
+                    </div>
+                    <span class="m-footerInfo__copyright">© 2023. Servicio publicitario.</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
