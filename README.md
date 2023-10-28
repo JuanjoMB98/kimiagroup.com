@@ -12,7 +12,7 @@
 
 # Despliegue
 He subido la web utilizando pages de git y este es el enlace para ver la web (así la podía ver en un móvil real)
-
+https://juanjomb98.github.io/kimiagroup.com/
 
 # Tareas
 - [x] Maquetar base Web
