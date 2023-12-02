@@ -1,7 +1,7 @@
-<img height="225" alt="zaralogo" src="https://media.licdn.com/dms/image/C4D0BAQFoeTCCNjCqzw/company-logo_200_200/0/1630511390825?e=1709769600&v=beta&t=N4NOMGsWSKsBKtnuQTzFq_7_mf7eoZZftoa6gx-LIrw" align="right">
+<img height="225" alt="baserplogo" src="https://media.licdn.com/dms/image/C560BAQGsqKT-AjomXA/company-logo_200_200/0/1519874130106?e=2147483647&v=beta&t=TsdQC9aBpDJYimAiFmijhswOn-pmWf1_ucFrdZfey-E" align="right">
 <div align="center">
-  <h1>Prueba Técnica - ZARA</h1>
-  <h3>Creación de un Hero Section con HTML,CSS,JS</h3>
+  <h1>Prueba Técnica - Kimia</h1>
+  <h3>Creación de una landing page con HTML,CSS,JS</h3>
   <h5><i>Libreta del proyecto para apuntar tiempos y anotaciones.</i></h5>
 </div>
  
@@ -10,33 +10,20 @@
 > [!NOTE]
 > En primer lugar muchas gracias por tu tiempo y la opotunidad! :smile:
 
-<br>
-
-
-# 1. PREANÁLISIS
-Despues de mirar los assets y el material proporcionado, lo primero que se me ha ocurrido es hacer un "Hero Section" donde el fondo sea el video y el scroll sea el engargado de manejar los segundos de reproducción, de forma que si hacemos scroll hacia bajo el video avance y hacemos scroll hacia arriba el video retroceda.
-
-Luego para el tema de los textos tengo la idea de hacer unos breakpoints donde en determinados momentos del video sea donde cambien las capas.
-
-Y para la versión movil lo mismo, pero cambiando el source del video de fondo (Mi intención es hacer simplemente este ajuste en el responsive) y que el resto fluya de forma natural.
-
-<br>
-
-# 2. MEMORIA
-## Despliegue
+# Despliegue
 He subido la web utilizando pages de git y este es el enlace para ver la web (así la podía ver en un móvil real)
-https://juanjomb98.github.io/kimiagroup.com/
 
-## Tareas
-- [ ] Maquetar base y elementos estaticos
-- [ ] Preparar las capas
-- [ ] JS para manejar el video mediante el scroll
-- [ ] Breakpoints para mostrar capas correspondientes
-- [ ] Revisar responsive
-- [ ] Control de volver al principio
 
-## Desarrollo
-### Maquetar base y elementos estaticos
+# Tareas
+- [x] Maquetar base Web
+- [x] Formulario con varios pasos
+- [x] Carrusel de opiniones de usuarios
+- [x] CTAs al formulario
+- [x] Revisar responsive
+- [x] Extras (Minify, Animación form cuando está en pantalla)
+
+# Desarrollo
+### Maquetar base Web & Comprobar el responsive
 >He tardado <5 horas> en maquetar toda la web con el contenido y comprobar el responsive en cualquier scope. Es completamente visible en cualquier situación
 
 **_Observaciones_**
@@ -66,5 +53,5 @@ Podría haber utilizado librerías como SwiperJS, pero finalmente he decidido ha
 ### CTAs al formulario
 >He tardado <15 mins> en animar el formulario y darle el toque distintivo
 
-> [!Important]
+> [!ALERT]
 > Muchas gracias por todo!
